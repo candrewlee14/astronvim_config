@@ -50,6 +50,15 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "zls",
+    },
+    config = {
+      zls = function()
+        return {
+          cmd = {"zls"};
+          filetypes = {"zig"};
+        }
+      end,
     },
   },
 
