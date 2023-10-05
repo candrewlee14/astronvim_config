@@ -5,8 +5,9 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
-  { import = "astrocommunity.editing-support.yanky-nvim" },
+  -- { import = "astrocommunity.editing-support.yanky-nvim" },
+  { import = "astrocommunity.completion.codeium-vim"},
+  { import = "astrocommunity.diagnostics.trouble-nvim"},
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
@@ -14,5 +15,5 @@ return {
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.scrolling.mini-animate" },
   { import = "astrocommunity.test.neotest" },
-  { import = "astrocommunity.workflow.hardtime-nvim" },
+  -- { import = "astrocommunity.workflow.hardtime-nvim" },
 }
