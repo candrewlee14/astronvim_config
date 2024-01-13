@@ -6,7 +6,6 @@ return {
 
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.editing-support.yanky-nvim" },
-  { import = "astrocommunity.completion.codeium-vim"},
   { import = "astrocommunity.diagnostics.trouble-nvim"},
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
@@ -16,4 +15,21 @@ return {
   { import = "astrocommunity.scrolling.mini-animate" },
   { import = "astrocommunity.test.neotest" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
+
+  { import = "astrocommunity.completion.copilot-lua" },
+  { -- further customize the options set by the community
+    "zbirenbaum/copilot.lua",
+    opts = {
+      suggestion = {
+        keymap = {
+          accept = "<C-l>",
+          accept_word = false,
+          accept_line = false,
+          next = "<C-.>",
+          prev = "<C-,>",
+          dismiss = "<C/>",
+        },
+      },
+    },
+  },
 }

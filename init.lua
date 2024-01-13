@@ -61,6 +61,15 @@ return {
           filetypes = {"zig"};
         }
       end,
+      clangd = function()
+        return {
+          cmd = {
+            "clangd",
+            "--offset-encoding=utf-16",
+          },
+          filetypes = {"c", "cpp", "objc", "objcpp"},
+        }
+      end,
     },
   },
 
